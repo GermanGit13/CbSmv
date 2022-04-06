@@ -44,6 +44,15 @@
                 <scope>test</scope>
             </dependency>
         <!-- FIN Librerías JUnits para los test con Maven -->
+
+        <!--Dependecia StringUtils -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <!--FIn Dependecia StringUtils -->
+
     </dependencies>
 
     <!--Plugins SureFire y FailSafe para JUnits -->
