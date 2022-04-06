@@ -144,7 +144,7 @@ public class Menu {
                 System.out.println("Jugador no asignado a equipo");
         }
     }
-//Prueba modificación
+
     private void modifyTeam() {
         boolean modify = false;
         System.out.println("Introduzca el nombre de equipo a modificar: ");
