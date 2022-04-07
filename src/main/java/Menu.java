@@ -216,7 +216,7 @@ public class Menu {
                 clothing.setDni(newDni);
                 clothing.setSerigraphy(newSerigraphy);
                 clothing.setSize(newSize);
-                clothing.getQuota();
+                clothing.getSize();
                 System.out.println("Equipo modificado correctamente");
                 modify = true;
             }
@@ -252,7 +252,7 @@ public class Menu {
             System.out.println("DNI: " +clothing.getDni());
             System.out.println("Serigrafía: " +clothing.getSerigraphy());
             System.out.println("Dorsal: " +clothing.getNumber());
-            System.out.println("Cuota: " + clothing.getQuota());
+            System.out.println("Cuota: " + clothing.getSize());
         }
     }
 }
