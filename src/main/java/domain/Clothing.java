@@ -1,22 +1,23 @@
 package domain;
 
+import static util.Constants.PRICE;
 import static util.Constants.QUOTA;
 
 public class Clothing {
 
     private String name;
+    private String dni;
     private String serigraphy;
     private int number;
     private String size;
-    private String dni;
 
-    public Clothing(String name, String dni, String serigraphy, int number, String size, float quota) {
+    public Clothing(String name, String dni, String serigraphy, int number, String size, float price) {
         this.name = name;
         this.dni = dni;
         this.serigraphy = serigraphy;
         this.number = number;
         this.size = size;
-        quota = QUOTA;
+        price = PRICE;
     }
 
     public String getName() {
@@ -39,8 +40,8 @@ public class Clothing {
         return size;
     }
 
-    public float getQuota() {
-        return QUOTA;
+    public float getPrice() {
+        return PRICE;
     }
 
     public void setName(String name) {
