@@ -53,6 +53,14 @@
         </dependency>
         <!--FIn Dependecia StringUtils -->
 
+        <!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+        <dependency>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.9.1.2184</version>
+        </dependency>
+        <!-- FIN https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+
     </dependencies>
 
     <!--Plugins SureFire y FailSafe para JUnits -->
@@ -92,6 +100,14 @@
                 </executions>
             </plugin>
             <!-- FIN Código para crear el ejecutable, se copia en el pom.xml fuera de dependencies-->
+
+            <!-- Código para usar sonarQube desde Maven-->
+                        <plugin>
+                            <groupId>org.sonarsource.scanner.maven</groupId>
+                            <artifactId>sonar-maven-plugin</artifactId>
+                            <version>3.4.0.905</version>
+                        </plugin>
+            <!-- FIN Código para usar sonarQube desde Maven-->
         </plugins>
     </build>
 </project>
