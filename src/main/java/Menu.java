@@ -197,7 +197,7 @@ public class Menu {
                 System.out.println("No se ha encontrado el equipo");
         }
     }
-//Comentario
+
     private void modifyClothing() {
         boolean modify = false;
         System.out.println("Introduzca el dni del jugador para modificar su pedido: ");
