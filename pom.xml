@@ -4,13 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.svalero.cbsmv</groupId>
+    <groupId>com.svalero.CbSmv</groupId>
     <artifactId>CbSmv</artifactId>
     <version>0.1</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outEncoding>UTF-8</project.reporting.outEncoding>
+        <sonar.host.url>http://192.168.1.50</sonar.host.url>
+        <!-- Nombre de usuario y contraseña con permisos de análisis de ejecución -->
+        <sonar.login>admin</sonar.login>
+        <sonar.password>sonarqube</sonar.password>
     </properties>
 
     <dependencies>
@@ -20,6 +26,7 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <version>3.3.1</version>
         </dependency>
+
         <!--Para generar el javadoc - al terminar crea una carpeta dentro de target- site->
         mvn javadoc:javadoc
         FIN Java DOC-->
@@ -102,11 +109,11 @@
             <!-- FIN Código para crear el ejecutable, se copia en el pom.xml fuera de dependencies-->
 
             <!-- Código para usar sonarQube desde Maven-->
-                        <plugin>
-                            <groupId>org.sonarsource.scanner.maven</groupId>
-                            <artifactId>sonar-maven-plugin</artifactId>
-                            <version>3.4.0.905</version>
-                        </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.6.0.1398</version>
+            </plugin>
             <!-- FIN Código para usar sonarQube desde Maven-->
         </plugins>
     </build>
